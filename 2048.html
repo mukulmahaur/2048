@@ -1,0 +1,53 @@
+<html><head>
+	<title>2048</title>
+	<style type="text/css">
+	body
+		{
+		    font-family: 'Helvetica', 'Arial', sans-serif;
+		    color: #444444;
+		    /*font-size: 9pt;*/
+		    background-color: #FAFAFA;
+		}
+		.grid {
+			height:399px;
+			width:400px;
+		    position:fixed;
+		    margin-left:-200px;
+		    margin-top:-150px;   
+		    top:50%;
+		    left:50%;
+		    padding: 5px;
+		    background: #bbada0;
+    		border-radius: 6px;
+		}
+		.block {
+			height: 100px;
+			width: 100px;
+			background: rgba(238, 228, 218, 0.35);
+			margin-right:5px;
+    		border-radius: 4px;			
+		}
+		.element{
+			text-align: center;
+			color: #776e65;
+			font-weight: bold;
+		    font-family: 'Helvetica', 'Arial', sans-serif;
+			font-size:40px;
+		}
+		.win{
+		    position:relative;
+			text-align: center;
+			margin-top:20px;
+		}
+	</style>
+</head>
+	<body>
+	<h1 class = "win" style="font-size: 50px">2048</h1>
+	<h2 class = "win" id="score">SCORE : </h2>
+	<script type="text/javascript" src="2048.js" >
+	</script>
+	<script type="text/javascript" >
+		Create.initialize();
+	</script>
+	</body>
+</html>
